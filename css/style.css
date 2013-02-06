@@ -170,6 +170,7 @@ Masthead
 #masthead {
   background: url('../images/masthead_bg.png') center top no-repeat;
   background-size: cover;
+  background-position-y: -177px;
 /*  background: #333;*/
   color: white;
   /*border-bottom-image: url('../images/btm_border.png') center top no-repeat;*/
@@ -181,7 +182,7 @@ Masthead
 
 
 #masthead .masthead-copy {
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
 #masthead h1 {
@@ -217,7 +218,7 @@ a.btn:hover {
 /* Benefits */
 
 #benefits {
-  background: #f5f5f5;
+  background: #fff;
   padding: 80px 0;
   text-align: center;
   padding-top: 150px;

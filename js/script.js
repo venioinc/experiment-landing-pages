@@ -1,5 +1,5 @@
 analytics.initialize({
-	'Google Analytics' : 'UA-38270530-1',
+	'Google Analytics' : 'UA-38269727-1',
 	'Mixpanel' : {
 					token:'9be8f28935f630ac2e528b939878581d',
 				}
@@ -21,7 +21,8 @@ $(function() {
 		console.log(event);
 		var elm = $(event.relatedTarget);
 		var index = elm.parent().children().index(elm);
-		
+		console.log(elm);
+		console.log(index);
 		$('#pager a.active').removeClass('active');		
 		
 		var pager_elem = $('#pager a')[index];
