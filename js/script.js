@@ -1,7 +1,22 @@
+analytics.initialize({
+	'Google Analytics' : 'UA-38271132-1',
+	'Mixpanel' : {
+					token:'9be8f28935f630ac2e528b939878581d'
+				}
+});
+
 $(function() {
+	var link = $('.convert');
+
+	analytics.trackLink(contact, 'Clicked to Convert');
+	
+	var contact = $('#contact_us');
+	
+	analytics.trackLink(contact, 'Clicked to Contact');
+	
 	$('.carousel').carousel({
-		pause: 'mouseenter',
-		interval: 5000
+		pause: null,
+		interval: 15000
 	}).bind('slide', function(event) {
 		console.log(event);
 		var elm = $(event.relatedTarget);
