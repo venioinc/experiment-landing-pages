@@ -11,7 +11,7 @@ $(function() {
 
 	var link = $('.convert');
 
-	analytics.trackLink(contact, 'Clicked to Convert');
+	analytics.trackLink(link, 'Clicked to Convert');
 	
 	var contact = $('#contact_us');
 	
