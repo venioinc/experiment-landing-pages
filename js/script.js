@@ -1,11 +1,11 @@
-analytics.initialize({
+$(function() {
+	analytics.initialize({
 	'Google Analytics' : 'UA-38270530-1',
 	'Mixpanel' : {
-					token:'9be8f28935f630ac2e528b939878581d',
+					token:'b9abac3f5a669c5e18fe739c2b1bbce6',
 				}
-});
+	});
 
-$(function() {
 	var link = $('.convert');
 
 	analytics.trackLink(contact, 'Clicked to Convert');
@@ -41,29 +41,3 @@ $(function() {
 		$(pager_elem).addClass('active');
 	});
 });
-
-/* custom cycle animation for micoach masthead */
-
-(function($) {
-  $.fn.cycle.transitions.venioSlider = function($cont, $slides, opts) {
-    var $el = $($slides[0]);
-    var w = $el.width();
-    w = w + w/3;
-    var h = $el.height();
-    opts.before.push(function(curr, next, opts, fwd) {
-      if (opts.rev)
-        fwd = !fwd;
-      $.fn.cycle.commonReset(curr,next,opts);
-      var c = 1.3;
-      var a = next.cycleW * c;
-      var b = curr.cycleW * c;
-      opts.cssBefore.left = fwd ? (a-1) : (1-a);
-      opts.animOut.left = fwd ? -b : b;
-    });
-    opts.cssBefore = { top : 0, opacity : 0, zIndex : 1, display : 'block' };
-    opts.animIn = { left : 0, opacity : 1 };
-    opts.animOut = { opacity : 0 };
-    opts.cssAfter = { zIndex : 0, display : 'none' };
-    opts.easing = 'easeInOutQuad';
-  };
-})(jQuery);
