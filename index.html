@@ -262,7 +262,24 @@
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript" src="js/smooth.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript">
+        analytics.initialize({
+        'Google Analytics' : 'UA-38271132-1',
+        'Mixpanel' : {
+                                        token:'16ed4d07e7761ffc4813bf58166a957f'
+                                }
+        });
 
+        analytics.track("Visited Homepage");
+        analytics.pageview();
+        var link = $('.convert');
+
+        analytics.trackLink(contact, 'Clicked to Convert');
+
+        var contact = $('#contact_us');
+
+        analytics.trackLink(contact, 'Clicked to Contact');
+</script>
 <!-- google analtics -->
 </body>
 </html>

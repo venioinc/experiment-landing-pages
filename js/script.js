@@ -1,4 +1,5 @@
 $(function() {
+<<<<<<< HEAD
 	analytics.initialize({
 	'Google Analytics' : 'UA-38271132-1',
 	'Mixpanel' : {
@@ -17,6 +18,8 @@ $(function() {
 	
 	analytics.trackLink(contact, 'Clicked to Contact');
 	
+=======
+>>>>>>> 74011326f0d317a9e6ad40397b36cc335d7a5481
 	$('.carousel').carousel({
 		pause: null,
 		interval: 15000
