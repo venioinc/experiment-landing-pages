@@ -1,11 +1,11 @@
-analytics.initialize({
+$(function() {
+	analytics.initialize({
 	'Google Analytics' : 'UA-38271132-1',
 	'Mixpanel' : {
-					token:'9be8f28935f630ac2e528b939878581d'
+					token:'16ed4d07e7761ffc4813bf58166a957f'
 				}
-});
+	});
 
-$(function() {
 	var link = $('.convert');
 
 	analytics.trackLink(contact, 'Clicked to Convert');
