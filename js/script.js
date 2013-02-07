@@ -6,6 +6,9 @@ $(function() {
 				}
 	});
 
+	analytics.track("Visited Homepage");
+    analytics.pageview();
+
 	var link = $('.convert');
 
 	analytics.trackLink(contact, 'Clicked to Convert');
@@ -18,7 +21,6 @@ $(function() {
 		pause: null,
 		interval: 15000
 	}).bind('slide', function(event) {
-		console.log(event);
 		var elm = $(event.relatedTarget);
 		var index = elm.parent().children().index(elm);
 		
