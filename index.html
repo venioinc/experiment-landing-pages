@@ -254,8 +254,23 @@
 <script type="text/javascript" src="js/user.js"></script>
 <script type="text/javascript" src="js/smooth.js"></script>
 <script src="js/script.js"></script>
+<script type="text/javascript" charset="utf-8">
+	analytics.initialize({
+	'Google Analytics' : 'UA-38269727-1',
+	'Mixpanel' : {
+  				token:'3fa99d75b24e4a417956ec20b2d4ebe7',
+				}
+	});
 
+	var link = $('.convert');
+
+	analytics.trackLink(contact, 'Clicked to Convert');
+	
+	var contact = $('#contact_us');
+	
+	analytics.trackLink(contact, 'Clicked to Contact');
+</script>
 <!-- google analtics -->
 </body>
 
-<html>
+</html>

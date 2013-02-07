@@ -1,19 +1,4 @@
 $(function() {
-	analytics.initialize({
-	'Google Analytics' : 'UA-38269727-1',
-	'Mixpanel' : {
-					token:'3fa99d75b24e4a417956ec20b2d4ebe7',
-				}
-	});
-
-	var link = $('.convert');
-
-	analytics.trackLink(contact, 'Clicked to Convert');
-	
-	var contact = $('#contact_us');
-	
-	analytics.trackLink(contact, 'Clicked to Contact');
-	
 	$('.carousel').carousel({
 		pause: null,
 		interval: 15000
